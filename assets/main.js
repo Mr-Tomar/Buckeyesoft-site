@@ -71,9 +71,10 @@
   }
 
   // Active nav link by path
+  var inBlog = /\/blog\//.test(location.pathname);
   var path = location.pathname.split("/").pop() || "index.html";
-  document.querySelectorAll(".nav-links a").forEach(function (a) {
+  document.querySelectorAll(".nav-links a:not(.btn)").forEach(function (a) {
     var href = a.getAttribute("href");
-    if (href === path) a.classList.add("active");
+    if (inBlog ? /blog\/$/.test(href) : href === path) a.classList.add("active");
   });
 })();

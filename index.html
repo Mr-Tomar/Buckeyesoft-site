@@ -5,35 +5,116 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BuckEyeSoft | AI, Cloud, Microsoft 365 & IT Consulting Services</title>
 <meta name="description" content="BuckEyeSoft is a US-focused IT consultancy delivering AI services, cloud migration, Microsoft 365, managed support & maintenance, and professional training. Get enterprise results with a partner you can reach 24/7.">
-<meta name="keywords" content="AI consulting, cloud migration, Microsoft 365 consulting, Office 365, managed IT support, IT maintenance, AI training, machine learning services, Azure, IT consultancy USA">
 <meta name="author" content="BuckEyeSoft">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.buckeyesoft.com/index.html">
+<link rel="canonical" href="https://buckeyesoft.com/">
 <!-- Open Graph -->
+<meta property="og:site_name" content="BuckEyeSoft">
 <meta property="og:type" content="website">
 <meta property="og:title" content="BuckEyeSoft | AI, Cloud, Microsoft 365 & IT Consulting">
 <meta property="og:description" content="Enterprise-grade AI, Cloud, Microsoft 365, Support & Training — delivered by a US-focused IT consultancy.">
-<meta property="og:url" content="https://www.buckeyesoft.com/">
-<meta property="og:image" content="https://www.buckeyesoft.com/assets/og-image.png">
+<meta property="og:url" content="https://buckeyesoft.com/">
+<meta property="og:image" content="https://buckeyesoft.com/assets/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <!-- Preconnect + fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="BuckEyeSoft Insights" href="https://buckeyesoft.com/blog/feed.xml">
 <link rel="stylesheet" href="assets/style.css">
+<meta name="theme-color" content="#0b1b33">
 <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
 <!-- Structured data -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"ProfessionalService",
-  "name":"BuckEyeSoft",
-  "description":"IT consultancy delivering AI services, cloud, Microsoft 365, support & maintenance, and training.",
-  "url":"https://www.buckeyesoft.com",
-  "telephone":"+91-9953591133",
-  "areaServed":"US",
-  "serviceType":["AI Consulting","Cloud Services","Microsoft 365","IT Support & Maintenance","IT Training"],
-  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"180"}
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://buckeyesoft.com/#org",
+   "name": "BuckEyeSoft",
+   "url": "https://buckeyesoft.com/",
+   "logo": "https://buckeyesoft.com/assets/logo.svg",
+   "email": "hello@buckeyesoft.com",
+   "telephone": "+91-9953591133",
+   "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+91-9953591133",
+    "contactType": "sales",
+    "areaServed": "US",
+    "availableLanguage": "English"
+   }
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://buckeyesoft.com/#website",
+   "url": "https://buckeyesoft.com/",
+   "name": "BuckEyeSoft",
+   "publisher": {
+    "@id": "https://buckeyesoft.com/#org"
+   }
+  },
+  {
+   "@type": "ProfessionalService",
+   "@id": "https://buckeyesoft.com/#service",
+   "name": "BuckEyeSoft",
+   "url": "https://buckeyesoft.com/",
+   "image": "https://buckeyesoft.com/assets/og-image.png",
+   "telephone": "+91-9953591133",
+   "areaServed": "US",
+   "parentOrganization": {
+    "@id": "https://buckeyesoft.com/#org"
+   },
+   "description": "IT consultancy delivering AI consulting, cloud migration, Microsoft 365, managed support and maintenance, and corporate IT training.",
+   "serviceType": [
+    "AI Consulting",
+    "Cloud Services",
+    "Microsoft 365",
+    "IT Support & Maintenance",
+    "IT Training"
+   ]
+  }
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "What IT services does BuckEyeSoft offer?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "We provide AI consulting, cloud migration and management on Azure, AWS and Google Cloud, Microsoft 365 deployment and Copilot enablement, 24/7 managed support and maintenance, and corporate IT training."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Do you work with small and mid-size businesses?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes. Most of our clients are growing mid-size companies that want enterprise-grade results with a senior team that is easy to reach."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "How do we start an AI project with BuckEyeSoft?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Book a free consultation or AI readiness assessment. We review your goals, data and systems, then recommend the highest-value use cases and a short pilot plan."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Do you offer 24/7 support?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes. Our managed support includes round-the-clock monitoring and helpdesk coverage with dedicated SLAs. You can also call us directly at 9953591133."
+   }
+  }
+ ]
 }
 </script>
 </head>
@@ -48,7 +129,9 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
+      <li><a href="ai.html">AI</a></li>
       <li><a href="training.html">Training</a></li>
+      <li><a href="blog/">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
       <li class="nav-cta"><a class="btn btn-primary" href="contact.html">Book a Consult</a></li>
     </ul>
@@ -113,7 +196,7 @@
           <li>Intelligent process automation</li>
           <li>AI strategy &amp; governance</li>
         </ul>
-        <a class="more" href="services.html#ai">Learn more <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="more" href="ai.html">Explore AI consulting <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
       <div class="card reveal">
         <div class="icon"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg></div>
@@ -251,6 +334,63 @@
   </div>
 </section>
 
+<!-- INSIGHTS -->
+<section class="section">
+  <div class="container">
+    <div class="center reveal">
+      <span class="eyebrow">Insights</span>
+      <h2>Latest from the blog</h2>
+      <p class="lead">Practical guides on AI, cloud and Microsoft 365 from our consultants.</p>
+    </div>
+    <div class="post-grid mt-lg">
+      <a class="post-card reveal" href="blog/ai-readiness-roadmap.html">
+        <div class="post-thumb"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-2.12 6.36-6.36 2.12 2.12-6.36 6.36-2.12z"/></svg></div>
+        <div class="post-body">
+          <div class="post-meta"><span class="tag">AI Strategy</span><span>8 min read</span></div>
+          <h3>AI Readiness Roadmap: How Mid-Size Businesses Move from Pilot to Production</h3>
+          <p>A practical AI readiness roadmap for mid-size businesses: pick the right use cases, fix data gaps, prove ROI in a short pilot, and scale AI into production safely.</p>
+          <span class="more link">Read article <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+      <a class="post-card reveal" href="blog/agentic-ai-for-business.html">
+        <div class="post-thumb"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <div class="post-body">
+          <div class="post-meta"><span class="tag">Agentic AI</span><span>7 min read</span></div>
+          <h3>What Is Agentic AI? A Practical Guide for Business Leaders</h3>
+          <p>Agentic AI explained in plain language: how AI agents differ from chatbots, where they create value today, the risks to manage, and how to launch your first agent safely.</p>
+          <span class="more link">Read article <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+      <a class="post-card reveal" href="blog/azure-cloud-migration-checklist.html">
+        <div class="post-thumb"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg></div>
+        <div class="post-body">
+          <div class="post-meta"><span class="tag">Cloud</span><span>8 min read</span></div>
+          <h3>Cloud Migration Checklist: 12 Steps to Move to Azure Without Downtime</h3>
+          <p>A 12-step cloud migration checklist for moving workloads to Microsoft Azure with minimal risk: discovery, landing zones, security, cutover planning, cost control and more.</p>
+          <span class="more link">Read article <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+    </div>
+    <div class="center mt-md"><a class="btn btn-ghost" href="blog/">View all articles</a></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="center reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>Common questions</h2>
+    </div>
+    <div class="faq-wrap">
+      <div class="faq-item reveal"><button class="faq-q">What IT services does BuckEyeSoft offer? <span class="pm">+</span></button><div class="faq-a"><p>We provide AI consulting, cloud migration and management on Azure, AWS and Google Cloud, Microsoft 365 deployment and Copilot enablement, 24/7 managed support and maintenance, and corporate IT training.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-q">Do you work with small and mid-size businesses? <span class="pm">+</span></button><div class="faq-a"><p>Yes. Most of our clients are growing mid-size companies that want enterprise-grade results with a senior team that is easy to reach.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-q">How do we start an AI project with BuckEyeSoft? <span class="pm">+</span></button><div class="faq-a"><p>Book a free consultation or AI readiness assessment. We review your goals, data and systems, then recommend the highest-value use cases and a short pilot plan.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-q">Do you offer 24/7 support? <span class="pm">+</span></button><div class="faq-a"><p>Yes. Our managed support includes round-the-clock monitoring and helpdesk coverage with dedicated SLAs. You can also call us directly at 9953591133.</p></div></div>
+    </div>
+  </div>
+</section>
+
 <!-- CTA -->
 <section class="section">
   <div class="container">
@@ -276,7 +416,7 @@
       <div>
         <h4>Services</h4>
         <ul>
-          <li><a href="services.html#ai">AI Services</a></li>
+          <li><a href="ai.html">AI Consulting</a></li>
           <li><a href="services.html#cloud">Cloud Services</a></li>
           <li><a href="services.html#o365">Microsoft 365</a></li>
           <li><a href="services.html#support">Support &amp; Maintenance</a></li>
@@ -287,7 +427,7 @@
         <ul>
           <li><a href="training.html">Training</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="index.html#services">Why Us</a></li>
+          <li><a href="blog/">Blog &amp; Insights</a></li>
           <li><a href="contact.html">Careers</a></li>
         </ul>
       </div>
@@ -307,7 +447,7 @@
     </div>
     <div class="footer-bottom">
       <span>© 2026 BuckEyeSoft. All rights reserved.</span>
-      <span><a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Sitemap</a></span>
+      <span><a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="sitemap.xml">Sitemap</a></span>
     </div>
   </div>
 </footer>

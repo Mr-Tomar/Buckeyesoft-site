@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>BuckEyeSoft Insights</title>
+  <link>https://buckeyesoft.com/blog/</link>
+  <atom:link href="https://buckeyesoft.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>Guides on AI, cloud and Microsoft 365 from BuckEyeSoft.</description>
+  <language>en-us</language>
+  <item>
+    <title>AI Readiness Roadmap: How Mid-Size Businesses Move from Pilot to Production</title>
+    <link>https://buckeyesoft.com/blog/ai-readiness-roadmap.html</link>
+    <guid>https://buckeyesoft.com/blog/ai-readiness-roadmap.html</guid>
+    <pubDate>Sun, 18 Oct 2026 09:00:00 GMT</pubDate>
+    <category>AI Strategy</category>
+    <description>A practical AI readiness roadmap for mid-size businesses: pick the right use cases, fix data gaps, prove ROI in a short pilot, and scale AI into production safely.</description>
+  </item>
+  <item>
+    <title>What Is Agentic AI? A Practical Guide for Business Leaders</title>
+    <link>https://buckeyesoft.com/blog/agentic-ai-for-business.html</link>
+    <guid>https://buckeyesoft.com/blog/agentic-ai-for-business.html</guid>
+    <pubDate>Sun, 18 Oct 2026 09:00:00 GMT</pubDate>
+    <category>Agentic AI</category>
+    <description>Agentic AI explained in plain language: how AI agents differ from chatbots, where they create value today, the risks to manage, and how to launch your first agent safely.</description>
+  </item>
+  <item>
+    <title>Cloud Migration Checklist: 12 Steps to Move to Azure Without Downtime</title>
+    <link>https://buckeyesoft.com/blog/azure-cloud-migration-checklist.html</link>
+    <guid>https://buckeyesoft.com/blog/azure-cloud-migration-checklist.html</guid>
+    <pubDate>Sun, 18 Oct 2026 09:00:00 GMT</pubDate>
+    <category>Cloud</category>
+    <description>A 12-step cloud migration checklist for moving workloads to Microsoft Azure with minimal risk: discovery, landing zones, security, cutover planning, cost control and more.</description>
+  </item>
+  <item>
+    <title>Microsoft 365 Copilot Rollout Guide for IT Leaders</title>
+    <link>https://buckeyesoft.com/blog/microsoft-365-copilot-rollout.html</link>
+    <guid>https://buckeyesoft.com/blog/microsoft-365-copilot-rollout.html</guid>
+    <pubDate>Sun, 18 Oct 2026 09:00:00 GMT</pubDate>
+    <category>Microsoft 365</category>
+    <description>How to roll out Microsoft 365 Copilot successfully: licensing, data permissions and oversharing clean-up, pilot groups, user training, and how to measure adoption and ROI.</description>
+  </item>
+  <item>
+    <title>AI Governance for Growing Companies: The Policies to Put in Place First</title>
+    <link>https://buckeyesoft.com/blog/ai-governance-framework.html</link>
+    <guid>https://buckeyesoft.com/blog/ai-governance-framework.html</guid>
+    <pubDate>Sun, 18 Oct 2026 09:00:00 GMT</pubDate>
+    <category>AI Governance</category>
+    <description>A lightweight AI governance framework for growing companies: acceptable use policy, data rules, risk tiers, human oversight, vendor review and monitoring, without slowing innovation.</description>
+  </item>
+</channel>
+</rss>
