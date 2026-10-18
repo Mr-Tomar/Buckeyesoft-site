@@ -159,3 +159,17 @@ Use the contact page to submit your enquiry.
 © BuckEyeSoft. All rights reserved.
 
 *AI | Cloud | Microsoft 365 | Support & Maintenance*
+
+---
+
+## ✍️ Adding a blog post
+
+Blog articles live in `blog/` as plain HTML files.
+
+1. Copy an existing article (for example `blog/agentic-ai-for-business.html`) to `blog/<your-slug>.html`.
+2. Update the `<title>`, meta description, canonical URL, `og:url`, and the JSON-LD blocks (`BlogPosting`, `BreadcrumbList`, `FAQPage`) in the `<head>`.
+3. Replace the hero title, date, article body, table of contents, and FAQ.
+4. Add a card for the post to `blog/index.html` (and optionally the "Latest from the blog" section on `index.html`).
+5. Add the URL to `sitemap.xml` and a new `<item>` to `blog/feed.xml`.
+
+After merging, submit `https://buckeyesoft.com/sitemap.xml` in Google Search Console so new pages are crawled quickly.

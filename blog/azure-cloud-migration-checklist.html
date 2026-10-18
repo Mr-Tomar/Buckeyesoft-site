@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Azure Cloud Migration Checklist: 12 Steps, Zero Downtime | BuckEyeSoft</title>
+<meta name="description" content="A 12-step cloud migration checklist for moving workloads to Microsoft Azure with minimal risk: discovery, landing zones, security, cutover planning, cost control and more.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://buckeyesoft.com/blog/azure-cloud-migration-checklist.html">
+<meta property="og:site_name" content="BuckEyeSoft">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Azure Cloud Migration Checklist: 12 Steps, Zero Downtime | BuckEyeSoft">
+<meta property="og:description" content="A 12-step cloud migration checklist for moving workloads to Microsoft Azure with minimal risk: discovery, landing zones, security, cutover planning, cost control and more.">
+<meta property="og:url" content="https://buckeyesoft.com/blog/azure-cloud-migration-checklist.html">
+<meta property="og:image" content="https://buckeyesoft.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="article:published_time" content="2026-10-18">
+<meta property="article:section" content="Cloud">
+<link rel="alternate" type="application/rss+xml" title="BuckEyeSoft Insights" href="https://buckeyesoft.com/blog/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<meta name="theme-color" content="#0b1b33">
+<link rel="icon" type="image/svg+xml" href="../assets/logo.svg">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BlogPosting",
+ "headline": "Cloud Migration Checklist: 12 Steps to Move to Azure Without Downtime",
+ "description": "A 12-step cloud migration checklist for moving workloads to Microsoft Azure with minimal risk: discovery, landing zones, security, cutover planning, cost control and more.",
+ "image": "https://buckeyesoft.com/assets/og-image.png",
+ "datePublished": "2026-10-18",
+ "dateModified": "2026-10-18",
+ "author": {
+  "@type": "Organization",
+  "name": "BuckEyeSoft Team",
+  "url": "https://buckeyesoft.com/"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "BuckEyeSoft",
+  "url": "https://buckeyesoft.com/",
+  "logo": {
+   "@type": "ImageObject",
+   "url": "https://buckeyesoft.com/assets/logo.svg"
+  }
+ },
+ "mainEntityOfPage": "https://buckeyesoft.com/blog/azure-cloud-migration-checklist.html",
+ "articleSection": "Cloud",
+ "keywords": "cloud migration checklist, Azure migration, cloud migration services, zero downtime migration",
+ "wordCount": 561
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Home",
+   "item": "https://buckeyesoft.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Blog",
+   "item": "https://buckeyesoft.com/blog/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "Cloud Migration Checklist: 12 Steps to Move to Azure Without Downtime",
+   "item": "https://buckeyesoft.com/blog/azure-cloud-migration-checklist.html"
+  }
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "How long does an Azure migration take?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Small environments can move in a few weeks. Mid-size estates with dozens of applications typically take three to six months when migrated in planned waves."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Can a cloud migration be done with zero downtime?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Many workloads can be moved with little or no user-facing downtime using continuous replication, careful DNS planning and off-peak cutovers. Some legacy systems still need a short maintenance window."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Will moving to the cloud lower our IT costs?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "It can, but only with right-sizing, reserved capacity, licensing benefits and good cost governance. Lift-and-shift without optimization often costs more than staying on-premises."
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container" aria-label="Main navigation">
+    <a class="brand" href="../index.html"><img class="logo" src="../assets/logo.svg" alt="" width="38" height="38"><span>Buck<b>Eye</b>Soft</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../services.html">Services</a></li>
+      <li><a href="../ai.html">AI</a></li>
+      <li><a href="../training.html">Training</a></li>
+      <li><a href="../blog/">Blog</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li class="nav-cta"><a class="btn btn-primary" href="../contact.html">Book a Consult</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="./">Blog</a> / Cloud</nav>
+    <span class="eyebrow">Cloud</span>
+    <h1>Cloud Migration Checklist: 12 Steps to Move to Azure Without Downtime</h1>
+    <div class="post-meta"><span>By BuckEyeSoft Team</span><span>·</span><time datetime="2026-10-18">October 18, 2026</time><span>·</span><span>8 min read</span></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container article-wrap">
+    <article class="prose">
+<p class="intro">A cloud migration is one of the few IT projects every part of the business feels. Done well, nobody notices the move, only the faster systems and lower bills afterwards. Done poorly, it means outages, surprise invoices and security gaps. This checklist captures what we cover on every Azure migration.</p>
+
+<div class="callout"><h2>Key takeaways</h2><ul>
+<li>Discovery and dependency mapping prevent most cutover surprises.</li>
+<li>Build a secure landing zone before moving the first workload.</li>
+<li>Migrate in waves, starting with low-risk systems.</li>
+<li>Set budgets and tagging on day one to avoid cost drift.</li>
+</ul></div>
+
+<h2 id="plan">Phase 1: Plan</h2>
+<h3>1. Define business goals</h3>
+<p>Be specific about why you are moving: retiring a data centre lease, improving resilience, enabling AI workloads or reducing cost. Goals decide trade-offs later.</p>
+<h3>2. Inventory and discover</h3>
+<p>Catalogue every server, database, application and integration. Tools such as Azure Migrate can collect performance data so you size resources on real usage rather than guesswork.</p>
+<h3>3. Map dependencies</h3>
+<p>Find which applications talk to each other, which share databases and which rely on hard-coded IP addresses. Unmapped dependencies cause most migration-day failures.</p>
+<h3>4. Choose a strategy per workload</h3>
+<p>For each system decide whether to rehost (lift and shift), replatform (move to managed services such as Azure SQL), refactor, replace with SaaS or retire. Not everything deserves the same treatment.</p>
+
+<h2 id="prepare">Phase 2: Prepare</h2>
+<h3>5. Build a landing zone</h3>
+<p>Set up the foundations first: subscriptions and management groups, networking, identity with Microsoft Entra ID, policies, logging and backup. A good landing zone means every workload arrives into a secure, consistent environment.</p>
+<h3>6. Design security and compliance</h3>
+<p>Apply least-privilege access, multi-factor authentication, encryption, network segmentation and Microsoft Defender for Cloud. Map controls to any frameworks you must meet, such as HIPAA, SOC 2 or PCI DSS.</p>
+<h3>7. Set up cost governance</h3>
+<p>Turn on budgets, alerts and a tagging standard (owner, environment, cost centre) before resources are created. Retrofitting tags later is painful.</p>
+<h3>8. Plan waves and rollback</h3>
+<p>Group workloads into waves, starting with lower-risk systems to build confidence. For each wave, write a cutover runbook and a rollback plan with clear go and no-go criteria.</p>
+
+<h2 id="migrate">Phase 3: Migrate</h2>
+<h3>9. Replicate and test</h3>
+<p>Use continuous replication so the target stays in sync with the source. Run functional, performance and failover tests in Azure before any users move.</p>
+<h3>10. Cut over with minimal downtime</h3>
+<p>Schedule cutover during low-traffic windows, lower DNS TTLs in advance, freeze changes, perform the final sync and switch traffic. With good replication, downtime can often be measured in minutes or avoided entirely for stateless services.</p>
+
+<h2 id="optimize">Phase 4: Optimize</h2>
+<h3>11. Right-size and optimize cost</h3>
+<p>After a few weeks of real usage, resize over-provisioned resources, use reserved instances or savings plans for steady workloads and shut down non-production environments outside working hours.</p>
+<h3>12. Operate and modernize</h3>
+<p>Set up monitoring, patching and backup as an ongoing service, then look for modernization opportunities such as containers, serverless and data platforms that make <a href="ai-readiness-roadmap.html">AI projects</a> easier to deliver.</p>
+
+<h2 id="mistakes">Common mistakes to avoid</h2>
+<ul>
+<li>Moving everything as-is and paying cloud prices for on-premises inefficiency.</li>
+<li>Skipping the landing zone and fixing security after the fact.</li>
+<li>Forgetting licensing, especially for Windows Server and SQL Server, where Azure Hybrid Benefit can save a lot.</li>
+<li>Treating migration as the finish line instead of the start of optimization.</li>
+</ul>
+<p>Planning a move? Our <a href="../services.html#cloud">cloud migration services</a> cover every step on this list, and our <a href="../services.html#support">managed support</a> team can run the environment afterwards.</p>
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <div class="faq-wrap" style="margin-top:0">
+      <div class="faq-item reveal"><button class="faq-q">How long does an Azure migration take? <span class="pm">+</span></button><div class="faq-a"><p>Small environments can move in a few weeks. Mid-size estates with dozens of applications typically take three to six months when migrated in planned waves.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-q">Can a cloud migration be done with zero downtime? <span class="pm">+</span></button><div class="faq-a"><p>Many workloads can be moved with little or no user-facing downtime using continuous replication, careful DNS planning and off-peak cutovers. Some legacy systems still need a short maintenance window.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-q">Will moving to the cloud lower our IT costs? <span class="pm">+</span></button><div class="faq-a"><p>It can, but only with right-sizing, reserved capacity, licensing benefits and good cost governance. Lift-and-shift without optimization often costs more than staying on-premises.</p></div></div>
+      </div>
+    </article>
+    <aside class="toc" aria-label="On this page">
+      <h2>On this page</h2>
+      <ol>
+          <li><a href="#plan">Phase 1: Plan</a></li>
+          <li><a href="#prepare">Phase 2: Prepare</a></li>
+          <li><a href="#migrate">Phase 3: Migrate</a></li>
+          <li><a href="#optimize">Phase 4: Optimize</a></li>
+          <li><a href="#mistakes">Common mistakes to avoid</a></li>
+          <li><a href="#faq">FAQ</a></li>
+      </ol>
+      <a class="btn btn-primary" href="../contact.html">Talk to an expert</a>
+    </aside>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="center reveal"><span class="eyebrow">Keep reading</span><h2>Related insights</h2></div>
+    <div class="post-grid mt-lg">
+      <a class="post-card reveal" href="ai-readiness-roadmap.html">
+        <div class="post-thumb"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-2.12 6.36-6.36 2.12 2.12-6.36 6.36-2.12z"/></svg></div>
+        <div class="post-body">
+          <div class="post-meta"><span class="tag">AI Strategy</span><span>8 min read</span></div>
+          <h3>AI Readiness Roadmap: How Mid-Size Businesses Move from Pilot to Production</h3>
+          <p>A practical AI readiness roadmap for mid-size businesses: pick the right use cases, fix data gaps, prove ROI in a short pilot, and scale AI into production safely.</p>
+          <span class="more link">Read article <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+      <a class="post-card reveal" href="agentic-ai-for-business.html">
+        <div class="post-thumb"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <div class="post-body">
+          <div class="post-meta"><span class="tag">Agentic AI</span><span>7 min read</span></div>
+          <h3>What Is Agentic AI? A Practical Guide for Business Leaders</h3>
+          <p>Agentic AI explained in plain language: how AI agents differ from chatbots, where they create value today, the risks to manage, and how to launch your first agent safely.</p>
+          <span class="more link">Read article <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+      <a class="post-card reveal" href="microsoft-365-copilot-rollout.html">
+        <div class="post-thumb"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.5"/></svg></div>
+        <div class="post-body">
+          <div class="post-meta"><span class="tag">Microsoft 365</span><span>7 min read</span></div>
+          <h3>Microsoft 365 Copilot Rollout Guide for IT Leaders</h3>
+          <p>How to roll out Microsoft 365 Copilot successfully: licensing, data permissions and oversharing clean-up, pilot groups, user training, and how to measure adoption and ROI.</p>
+          <span class="more link">Read article <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-band reveal">
+      <h2>Want help putting this into practice?</h2>
+      <p>Book a free 30-minute consultation and we'll map your quickest wins in AI, cloud and Microsoft 365.</p>
+      <div class="btn-row btn-row-center">
+        <a class="btn btn-primary btn-lg" href="../contact.html">Book a Free Consult</a>
+        <a class="btn btn-ghost btn-lg" href="tel:9953591133">Call 9953591133</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="../index.html"><img class="logo" src="../assets/logo.svg" alt="" width="38" height="38"><span>Buck<b>Eye</b>Soft</span></a>
+        <p>A US-focused IT consultancy delivering AI, cloud, Microsoft 365, managed support, and training that drive measurable results.</p>
+      </div>
+      <div><h4>Services</h4><ul>
+        <li><a href="../ai.html">AI Consulting</a></li>
+        <li><a href="../services.html#cloud">Cloud Services</a></li>
+        <li><a href="../services.html#o365">Microsoft 365</a></li>
+        <li><a href="../services.html#support">Support &amp; Maintenance</a></li>
+      </ul></div>
+      <div><h4>Company</h4><ul>
+        <li><a href="../training.html">Training</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+        <li><a href="../blog/">Blog &amp; Insights</a></li>
+        <li><a href="../contact.html">Careers</a></li>
+      </ul></div>
+      <div><h4>Contact</h4><ul>
+        <li><a href="tel:9953591133"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 9953591133</a></li>
+        <li><a href="mailto:hello@buckeyesoft.com"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> hello@buckeyesoft.com</a></li>
+        <li><span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Mon–Sat, 9am–8pm</span></li>
+      </ul>
+      <div class="socials"><a href="#">in</a><a href="#">X</a><a href="#">GH</a></div></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 BuckEyeSoft. All rights reserved.</span>
+      <span><a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="../sitemap.xml">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/main.js" defer></script>
+</body>
+</html>
